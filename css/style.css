@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: antiquewhite;
+}
+.lienhe{
+    background-color: #ffff;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    /* border-top: 1px solid #333; */
+    border-bottom: 1px solid #333;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 8px;
+}
+.lienhe p{
+    
+    padding-left: 20px;
+    color: #333;
+    font-size: 1.3vw;
+}
+.lienhe span{
+  
+    color: #c9ae63;
+    font-size: 1.3vw;
+}
+.title-1 h3{
+    text-align: center;
+}
+header .nav{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav > .menu > ul>li{
+    display: inline;
+    padding: 20px 20px;
+  
+}
+
+.nav > .icons > ul>li{
+    display: inline;
+    padding: 20px 10px;
+}
+.line{
+    width: 100%;
+    background-color: #cfd3cb;
+    height: 30px;
+    text-align: center;
+    padding-top: 3px;
+}
+.line > b>span{
+    color: #c9ae63;
+}
+.box{
+    background: rgba(207,211,203,.3);
+}
+.content{
+    margin: 100px 10px;
+    text-align: center;
+
+}
+.content > .email{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #333 ;
+    margin: 20px 0;
+    
+}
+
+.content > .submit{
+    width: 100%;
+    height: 45px;
+    background-color: #333;
+    color: #fff;
+}
+.mr{
+    padding-top: 50px;
+}
+.box_tong{
+    position: relative;
+}
+.spct{
+    position: absolute;
+    left:250px;
+    top:200px;
+    width: 1080px;
+    height: 550px;
+
+}
+.img{
+    width: 300px;
+    float: left;
+}
+.img img{
+    width: 300px;
+}
+.spct1{
+    width: 700px;
+    float: right;
+}
+.gia{
+    color: red;
+}
+.color {
+    height: 50px;
+}
+
+.size{
+  margin-top: 30px;
+}
+.size input{
+    margin: 5px 10px;
+    padding: 10px;
+}
+.them input{
+    margin:10px ;
+  width: 400px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  font-size: 30px;
+}
+.mota p{
+    line-height: 5px;
+}
+
+.them input:hover{
+    background-color: white;
+    color:black;
+}
+.img img:hover{
+    transform: scale(1.3)
+}
+.spcl{
+position: absolute;
+top: 700px;
+left: 300px;
+}
+.spcl2{
+    width: 900px;
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 100px;
+}
+
+/* đăng nhập đăng ký */
+.content1 > .dn{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #333 ;
+    margin: 20px 0;
+    
+}
+
+.content1 > .submit{
+    width: 100%;
+    height: 45px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
