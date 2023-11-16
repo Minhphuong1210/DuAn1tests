@@ -153,44 +153,49 @@ header .nav{
 }
 
 /* footer */
-.row{
-    padding-bottom: 10px;
-    
+.row1{
+    background-color: #fafafa;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
-.row ul{
-    margin-top: 0;
-    
-}
-.row ul li{
-  
+.colum ul li{
     list-style: none;
-    /* padding-bottom: 20px; */
-}   
-.row ul li a{
+    padding: 10px 0;
+}
+.colum-icons ul li{ 
+    margin-top: 10px;
+    display: inline;
+    list-style: none;
+    padding: 10px 0;
+}
+.colum ul li a{
     text-decoration: none;
     color: #333;
-    font-size: 0.9vw;
-   
 }
-.row ul li a b{
-    text-decoration: none;
-    color: #333;
-    font-size: 1.2vw;
-    
-}
-
-.row ul li a:hover{
+.colum ul li a:hover{
     text-decoration: none;
     color: #c9ae63;
 }
-.color{
-padding-top: 10px;
-    background-color: #c0bdbd;
-    height: 400px;
+.writer{
+    width: 100%;
+    color: #333;
+    text-align: center;
 }
-/* .color1{
-    position: absolute;
-top: 1000px;
-left: 300px;
-} */
+.writer p{
+    padding-top: 10px;
+}
 
+/* chitietsp */
+.title-ctsp{
+    display: flex;
+    justify-content: space-between;
+}
+.title-cts p svg{
+    color: #ccc;
+}
+.infor{
+    width: 100%;
+}
+.infor .hang{
+    padding-bottom: 20px;
+}
