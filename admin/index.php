@@ -47,40 +47,41 @@
                     include "categories/list.php";
                     break;
             case 'addsp':
-                if(isset($_POST['themmoi'])){
-                    $iddm=$_POST['iddm'];
-                    $tensp=$_POST['tensp'];
-                    $giasp=$_POST['giasp'];
-                    // hình
-                    $target_dir = "upload/";
-                    $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
-                    if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
-                        echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                    } else {
-                        echo "Sorry, there was an error uploading your file.";
-                    }
-
-                    $motasp =$_POST['motasp'];
-                    $color =$_POST['color'];
-                    $size =$_POST['size'];
-                    $listcolor =color();
-                    insertsp($tenloai,$giasp,$hinh,$motasp,$color,$size,$iddm);
-                    $thongbao="Thêm thành công";
-                    }
-                   
-                    include "products/add/addsp.php";
-                    break;
-
-
-
-                    case "addSize":
-                        if(isset($_POST["themmoi"]) && $_POST["themmoi"]) {
-                            $mau=$_POST['mau'];
-                            insert_color($mau);
-                            $thongbao="Thêm thành công";
+                    if(isset($_POST['themmoi'])){
+                        $iddm=$_POST['iddm'];
+                        $tensp=$_POST['tensp'];
+                        $giasp=$_POST['giasp'];
+                        // hình
+                        $target_dir = "upload/";
+                        $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+                        if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
+                            echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                        } else {
+                            echo "Sorry, there was an error uploading your file.";
                         }
+
+                        $motasp =$_POST['motasp'];
+                        $color =$_POST['color'];
+                        $size =$_POST['size'];
+                        $listcolor =color();
+                        insertsp($tenloai,$giasp,$hinh,$motasp,$color,$size,$iddm);
+                        $thongbao="Thêm thành công";
+                        }
+                    
+                        include "products/addsp.php";
+                        break;
+
+
+
+            case "addColor":
+                if(isset($_POST["themmoi"]) && $_POST["themmoi"]) {
+                    $id=$_POST['id'];
+                    $mau=$_POST['mau'];
+                    insert_color($mau);
+                     $thongbao="Thêm thành công";
+                    }
                         
-                        include "products/add/addColor.php";
+                        include "products/addColor.php";
                         break;
          }
                

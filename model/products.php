@@ -8,8 +8,9 @@ function load_all_sp(){
 }
 
 function insert_color($mau){
-    $sql="insert into color(name) values('$mau')";
+    $sql="INSERT INTO `color` (`mau`) VALUES ('$mau')";
     pdo_execute($sql);
     return;     
 }
+
 ?>
