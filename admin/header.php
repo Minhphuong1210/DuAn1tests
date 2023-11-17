@@ -18,7 +18,7 @@
             <ul>
               <li><a href="#">Trang chủ</a></li>
               <li><a href="index.php?act=adddm">Danh mục</a></li>
-              <li><a href="#">Hàng hóa</a></li>
+              <li><a href="index.php?act=addsp">Hàng hóa</a></li>
               <li><a href="#">khách hàng</a></li>
               <li><a href="#">Bình luận</a></li>
               <li><a href="#">Thống kê</a></li>
